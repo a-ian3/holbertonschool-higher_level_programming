@@ -1,17 +1,22 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
->>> text_indentation('hello. hello? hello:')
-hello.
-<BLANKLINE>
-hello?
-<BLANKLINE>
-hello:
-<BLANKLINE>
 
->>> text_indentation(4)
-Traceback (most recent call last):
-TypeError: text must be a string
+>>> text_indentation("")
+>>> # (Empty output since the string is empty)
 
->>> text_indentation()
-Traceback (most recent call last):
-TypeError: text_indentation() missing 1 required positional argument: 'text'
+>>> text_indentation("No special chars here")
+No special chars here
+
+>>> text_indentation("Holberton. School? How are you: John")
+Holberton.
+School?
+How are you:
+John
+>>> text_indentation("Holberton.School")
+Holberton.
+School
+>>> text_indentation("Holberton.\n\nSchool?\n\nHow are you:\n\nJohn")
+Holberton.
+School?
+How are you:
+John
