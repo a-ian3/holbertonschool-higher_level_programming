@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-# 0-rectangle.py
-# Brennan D Baraban <375@holbertonschool.com>
-"""Defines a Rectangle class."""
+# 0-square.py
+"""Defines a square."""
 
 
-class Rectangle:
-    """Represent a rectangle."""
-    pass
+class square:
+     """Empty class that define the square."""
+     pass
