@@ -1,24 +1,13 @@
 #!/usr/bin/python3
-"""
-Module is_same_class
-Ce module définit une classe MyListt_sorted().
-"""
+"""Function that exact same object"""
 
 
 def is_same_class(obj, a_class):
+    """ function that returns True if the object is
+    exactly an instance of the specified class ; otherwise False
 
+    Args:
+        obj: Object
+        a_class: class type
     """
-    Retourne True si l'objet est exactement,
-    sans tenir compte des sous-classes.
-
-    Arguments:
-    obj : l'objet à vérifier
-    a_class : la classe à comparer
-
-    Retourne:
-    True si obj est une instance exacte de a_class, sinon False.
-    """
-    if type(obj) == a_class:
-        return True
-    else:
-        return False
+    return type(obj) is a_class
